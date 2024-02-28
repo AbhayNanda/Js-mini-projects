@@ -1,0 +1,31 @@
+/* * {
+  border: 2px solid violet;
+} */
+.container {
+  height: 90vh;
+}
+.form-control {
+  width: 77% !important;
+}
+.form-control:focus {
+  border-color: white !important;
+  box-shadow: none !important;
+}
+button {
+  width: 35px !important;
+}
+.detail {
+  font-size: 0.8rem;
+}
+.box {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 0.7092086834733893) 0%,
+    rgba(253, 29, 29, 0.364670868347339) 50%,
+    rgba(245, 196, 127, 1) 100%
+  );
+}
+.icon {
+  width: 35% !important;
+}
