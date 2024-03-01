@@ -1,8 +1,11 @@
 const apikey = "3be8ba74785c53ea098214d5b3f043fa";
 const apiurl =
   "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=jammu";
-async function checkweather() {
-  const response = await fetch(apiurl + `&appid=${apikey}`);
+const searchbox = document.querySelector(".search input")
+const searchbtn = document.querySelector(".search button")
+
+  async function checkweather(ci) {
+  const response = await fetch(apiurl + city + `&appid=${apikey}`);
   var data = await response.json();
 
   console.log(data);
@@ -12,4 +15,8 @@ async function checkweather() {
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
   document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 }
+
+searchbtn.addEventListener("click",()=>{
+  checkweather(searchbox.value);
+})
 checkweather();
