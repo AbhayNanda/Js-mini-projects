@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+.box {
+  background-color: #002339;
+  color: #fff;
+}
+.box{
+  height: 100vh;
+}
+.copy{
+  position: relative;
+    bottom: 2.4rem;
+    left: 22.4rem;
+}
+img {
+  width: 1.5rem;
+}
+.container h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
+.container span {
+  color: #019f55;
+  border-bottom: 4px solid#019f55;
+  padding: 7px;
+}
+
+.form-control{
+  width: 35% !important;
+  box-shadow: none !important;
+  border-color: #019f55 !important;
+}
