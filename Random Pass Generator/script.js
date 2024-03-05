@@ -21,7 +21,7 @@ function createpass() {
 }
 
 function copypass(){
-  passwordbox.select()
-  navigator.clipboard.writeText("passwordbox.value")
-  alert("Code Copied")
+  passwordbox.select();
+  navigator.clipboard.writeText(passwordbox.value);
+  alert("Code Copied");
 }
