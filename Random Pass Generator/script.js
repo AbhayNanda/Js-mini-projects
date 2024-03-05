@@ -19,3 +19,9 @@ function createpass() {
   }
   passwordbox.value = password;
 }
+
+function copypass(){
+  passwordbox.select()
+  navigator.clipboard.writeText("passwordbox.value")
+  alert("Code Copied")
+}
