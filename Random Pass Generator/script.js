@@ -4,7 +4,7 @@ const length = 12;
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowercase = "abcdefghijklmnopqrstuvwxyz";
 const number = "0123456789";
-const symbol = "~!@#$%^&*" 
+const symbol = "~!@#$%^&*";
 
 const allChars = uppercase + lowercase + number + symbol;
 
@@ -20,7 +20,7 @@ function createpass() {
   passwordbox.value = password;
 }
 
-function copypass(){
+function copypass() {
   passwordbox.select();
   navigator.clipboard.writeText(passwordbox.value);
   alert("Code Copied");
