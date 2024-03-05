@@ -4,8 +4,9 @@ const length = 12;
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowercase = "abcdefghijklmnopqrstuvwxyz";
 const number = "0123456789";
+const symbol = "~!@#$%^&*" 
 
-const allChars = uppercase + lowercase + number;
+const allChars = uppercase + lowercase + number + symbol;
 
 function createpass() {
   let password = "";
@@ -17,13 +18,4 @@ function createpass() {
     password += allChars[Math.floor(Math.random() * allChars.length)];
   }
   passwordbox.value = password;
-}
-
-function copypassword() {
-  const textarea = document.createElement('textarea');
-    textarea.value = text;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
 }
