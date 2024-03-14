@@ -8,3 +8,12 @@
   /* background: blueviolet; */
   width: 100vw;
 }
+.box {
+  width: 20rem;
+}
+body {
+  background: blueviolet !important;
+}
+.search input {
+  width: 99% !important;
+}
