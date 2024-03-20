@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 2px solid red; */
+}
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(101, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.container {
+  height: 98vh;
+}
+.input {
+  margin-top: 2rem !important;
+}
+.cale {
+  padding-bottom: 2.5px !important;
+  margin-right: 0.5rem;
+  width: 15rem;
+}
