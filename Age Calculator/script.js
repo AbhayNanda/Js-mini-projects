@@ -1,5 +1,6 @@
 let userinput = document.getElementById("date");
 userinput.max = new Date().toISOString().split("T")[0];
+let result = document.getElementById("result");
 
 function calculateage() {
   let birthdate = new Date(userinput.value);
@@ -35,7 +36,7 @@ function calculateage() {
     m3 = 11;
     y3--;
   }
-  console.log(y3, m3, d3);
+  result.innerHTML = `You are ${y3} years , ${m3} months, ${d3} days old`;
 }
 
 function getdaysinmonth(years, month) {
